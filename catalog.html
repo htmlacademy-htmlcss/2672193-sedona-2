@@ -6,13 +6,14 @@
     <title>HTML Academy: Гостиницы Седоны</title>
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="icon" href="favicon.ico">
+     <link rel="icon" type="image/png" href="images/favicon.png">
   </head>
 
   <body class="main_page">
     <div class="main_container">
       <header class="page_header" data-test="header">
         <a class="main_logo" href="index.html" aria-current="page">
-          <img class="page_screen" src="images/header_footer/site_logo.svg" width="140" height="70" alt="Логотип сайта">
+          <img class="page_screen" src="images/site_logo.svg" width="140" height="70" alt="Логотип сайта">
         </a>
         <nav class="navigation_page">
           <ul class="navigation_list">
@@ -195,7 +196,7 @@
           </div>
           <ul class="card_list">
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel1.jpg" width="300" height="212" alt="Ущелье">
+              <img class="card_picture" src="images/hotel1.jpg" width="300" height="212" alt="Ущелье">
               <h3 class="card_title" lang="en">Amara Resort & Spa</h3>
               <span class="card_price_object">Гостиница</span>
               <b class="card_price_value">От <span>4000</span> ₽</b>
@@ -207,7 +208,7 @@
               <p class="card_level_text">Рейтинг:<span> 8,5</span></p>
             </li>
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel2.jpg" width="300" height="212" alt="Скалистое плато">
+              <img class="card_picture" src="images/hotel2.jpg" width="300" height="212" alt="Скалистое плато">
               <h3 class="card_title" lang="en">Villas at Poco Diablo</h3>
               <span class="card_price_object">Гостиница</span>
               <b class="card_price_value">От <span>5000</span> ₽</b>
@@ -220,7 +221,7 @@
               <p class="card_level_text">Рейтинг:<span> 9,2</span></p>
             </li>
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel3.jpg" width="300" height="212"
+              <img class="card_picture" src="images/hotel3.jpg" width="300" height="212"
                 alt="Скалистая возвышенность">
               <h3 class="card_title" lang="en">Desert Quail Inn</h3>
               <span class="card_price_object">Гостиница</span>
@@ -233,7 +234,7 @@
               <p class="card_level_text">Рейтинг:<span> 6,9</span></p>
             </li>
             <li class="card_item">
-              <img class="card_picture" src="images/main/hotel4.jpg" width="300" height="212"
+              <img class="card_picture" src="images/hotel4.jpg" width="300" height="212"
                 alt="Отвесная скала под звездным небом">
               <h3 class="card_title" lang="en">GreenTree Inn</h3>
               <span class="card_price_object">Гостиница</span>
@@ -274,8 +275,9 @@
           <p class="follow_description">Только полезная информация и никакого спама,<br>
             честное
             бойскаутское!</p>
+            <label class="visually_hidden" for="subscribe_form_catalog">Ввести данные для получения рассылки</label>
           <form class="subscribe_form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="user_email" placeholder="Ваш e-mail" type="Email" name="user_email" required>
+            <input class="user_email" id="subscribe_form_catalog" placeholder="Ваш e-mail" type="Email" name="user_email" required>
             <button class="subscribe_button" type="submit">Подписаться
             </button>
           </form>
